@@ -236,7 +236,7 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # Nlsv ▸ List View
 # clmv ▸ Column View
 # icnv ▸ Icon View
-defaults write com.apple.Finder FXPreferredViewStyle -string "icnv"
+defaults write com.apple.Finder FXPreferredViewStyle -string "Nlsv"
 
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false

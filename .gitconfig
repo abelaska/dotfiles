@@ -1,6 +1,6 @@
 [user]
-    name = Roman Ožana
-    email = ozana@omdesign.cz
+    name = Alois Bělaška
+    email = alois.belaska@gmail.com
 
 [color]
     ui = always
@@ -105,8 +105,8 @@
 
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-[url "git@github.com:OzzyCzech/"]
-    insteadOf = "git://github.com/OzzyCzech/"
+[url "git@github.com:abelaska/"]
+    insteadOf = "git://github.com/abelaska/"
 
 # See https://help.github.com/articles/checking-out-pull-requests-locally
 [remote "origin"]
