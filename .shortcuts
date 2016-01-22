@@ -15,6 +15,14 @@ alias php-stop="sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php56
 alias php-restart="php-stop && php-start"
 
 #############################################################################
+# tokumx aliases
+#############################################################################
+
+alias tokumx-start="sudo launchctl load /usr/local/opt/tokumx-bin/homebrew.mxcl.tokumx-bin.plist"
+alias tokumx-stop="sudo launchctl unload /usr/local/opt/tokumx-bin/homebrew.mxcl.tokumx-bin.plist"
+alias tokumx-restart="tokumx-stop && tokumx-start"
+
+#############################################################################
 # mongo aliases
 #############################################################################
 

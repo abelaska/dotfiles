@@ -33,8 +33,9 @@ Then install docker and docker-machine:
 Create your docker
 
     docker-machine create --driver virtualbox dev
+    docker-machine start dev # start machine
     docker-machine ls # show current machines
-    eval "$(docker-machine env dev)"
+    eval "$(docker-machine env dev)" # setup local env
     docker-machine env dev
 
 -  https://docs.docker.com/machine/get-started/ - Starting with Docker machine
@@ -269,6 +270,17 @@ See my configuration:
     xdebug.profiler_output_name = cachegrind.out.%H.%t
     xdebug.profiler_enable_trigger = 1;
     xdebug.profiler_output_dir = /Users/roman/.Trash
+
+## tokumx
+
+    brew tap tokutek/tokumx
+    brew install tokumx-bin
+    sudo chmod 600 /usr/local/opt/tokumx-bin/homebrew.mxcl.tokumx-bin.plist
+    sudo chown root /usr/local/opt/tokumx-bin/homebrew.mxcl.tokumx-bin.plist
+
+Setup to autostart after login
+
+    ln -sfv /usr/local/opt/tokumx-bin/*.plist ~/Library/LaunchAgents
 
 ## mongodb
 
