@@ -30,3 +30,12 @@ export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local
 # same as run ./configure LDFLAGS=-L/usr/local/lib CPPFLAGS=-I/usr/local/include
 export CFLAGS="-I/usr/local/include"
 export LDFLAGS="-L/usr/local/lib"
+
+# Google Cloud SDK
+export PATH="/Users/abelaska/Applications/google-cloud-sdk/bin:$PATH"
+
+# Google App Engine Go SDK
+export PATH="/Users/abelaska/Applications/go_appengine:$PATH"
+
+# Docker
+eval "$(docker-machine env dev)"

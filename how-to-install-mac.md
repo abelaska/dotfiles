@@ -385,6 +385,7 @@ after that relaunch Terminal and check bash version
     brew info git
     brew install git-extras
     brew install git bash-completion
+    git config --global core.editor "atom --wait"
 
 And update your `~/.bash_profile` to add autocomplete and prompt:
 
