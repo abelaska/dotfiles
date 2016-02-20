@@ -128,6 +128,14 @@ alias npmu="sudo npm update"
 alias npmr="sudo npm uninstall"
 alias npmrg="sudo npm uninstall -g"
 
+# Faster npm for europeans
+command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
+
+# npm offline
+# install npm dependencies from cache
+# https://github.com/npm/npm/issues/2568#issuecomment-30626394
+alias npmo="sudo npm install --cache-min 999999999"
+
 ########################################################################################################################
 # network
 ########################################################################################################################
@@ -189,11 +197,3 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
-
-# Faster npm for europeans
-command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
-
-# npm offline
-# install npm dependencies from cache
-# https://github.com/npm/npm/issues/2568#issuecomment-30626394
-alias npmo="sudo npm install --cache-min 999999999"

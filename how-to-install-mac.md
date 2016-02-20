@@ -41,6 +41,28 @@ Create your docker
 -  https://docs.docker.com/machine/get-started/ - Starting with Docker machine
 -  https://hub.docker.com/
 
+## NTFS Write Support
+
+Mount NTFS formatted drives with read-write access.
+
+### Disable SIP
+
+You need to disable the new System Integrity Protection to install into some system protected directories – this involves booting your OSX into Recovery Mode with ‘command’ + ‘r’ on restart and disabling with command:
+
+    csrutil disable
+
+### Installation
+
+Install latest osxfuse dmg package from https://github.com/osxfuse/osxfuse/releases
+
+    brew install homebrew/fuse/ntfs-3g
+    sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.orig
+    sudo ln -s /usr/local/Cellar/ntfs-3g/2015.3.14/sbin/mount_ntfs /sbin/mount_ntfs
+
+    and now re-enable SIP with csrutil in Recovery Mode
+
+    csrutil enable
+
 ## NGINX
 
 ### Install

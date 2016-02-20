@@ -36,6 +36,13 @@ export PATH="/Users/abelaska/Applications/google-cloud-sdk/bin:$PATH"
 
 # Google App Engine Go SDK
 export PATH="/Users/abelaska/Applications/go_appengine:$PATH"
+export GOPATH="/Users/abelaska/Applications/go_appengine/gopath"
+
+# Android SDK
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
+# React
+export REACT_EDITOR=atom
 
 # Docker
 eval "$(docker-machine env dev)"
