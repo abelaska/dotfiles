@@ -59,7 +59,7 @@ Install latest osxfuse dmg package from https://github.com/osxfuse/osxfuse/relea
     sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.orig
     sudo ln -s /usr/local/Cellar/ntfs-3g/2015.3.14/sbin/mount_ntfs /sbin/mount_ntfs
 
-    and now re-enable SIP with csrutil in Recovery Mode
+and now re-enable SIP with csrutil in Recovery Mode
 
     csrutil enable
 
@@ -394,6 +394,17 @@ and
 after that relaunch Terminal and check bash version
 
     echo $BASH_VERSION
+
+## Rethinkdb
+
+	brew install rethinkdb
+
+  sudo chown root /usr/local/opt/rethinkdb/homebrew.mxcl.rethinkdb.plist
+  sudo chmod 644 /usr/local/opt/rethinkdb/homebrew.mxcl.rethinkdb.plist
+
+Follow command will autostart rethinkdb after login
+
+	ln -sfv /usr/local/opt/rethinkdb/*.plist ~/Library/LaunchAgents
 
 ## Redis
 
