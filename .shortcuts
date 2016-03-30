@@ -15,6 +15,14 @@ alias php-stop="sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.php56
 alias php-restart="php-stop && php-start"
 
 #############################################################################
+# memcache aliases
+#############################################################################
+
+alias memcache-start="memcached -d -l localhost"
+alias memcache-stop="killall memcached 2>/dev/null"
+alias memcache-restart="memcache-stop && memcache-start"
+
+#############################################################################
 # rethinkdb aliases
 #############################################################################
 
