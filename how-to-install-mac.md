@@ -397,9 +397,9 @@ after that relaunch Terminal and check bash version
 
 ## Memcached
 
-  brew install memcached
-  sudo chown root /usr/local/opt/memcached/homebrew.mxcl.memcached.plist
-  sudo chmod 644 /usr/local/opt/memcached/homebrew.mxcl.memcached.plist
+	brew install memcached
+	sudo chown root /usr/local/opt/memcached/homebrew.mxcl.memcached.plist
+	sudo chmod 644 /usr/local/opt/memcached/homebrew.mxcl.memcached.plist
 
 Follow command will autostart memcached after login
 
@@ -408,8 +408,8 @@ Follow command will autostart memcached after login
 ## Rethinkdb
 
 	brew install rethinkdb
-  sudo chown root /usr/local/opt/rethinkdb/homebrew.mxcl.rethinkdb.plist
-  sudo chmod 644 /usr/local/opt/rethinkdb/homebrew.mxcl.rethinkdb.plist
+	sudo chown root /usr/local/opt/rethinkdb/homebrew.mxcl.rethinkdb.plist
+	sudo chmod 644 /usr/local/opt/rethinkdb/homebrew.mxcl.rethinkdb.plist
 
 Follow command will autostart rethinkdb after login
 
