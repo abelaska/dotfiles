@@ -397,7 +397,7 @@ after that relaunch Terminal and check bash version
 
 ## Memcached
 
-	brew install memcached
+  brew install memcached
   sudo chown root /usr/local/opt/memcached/homebrew.mxcl.memcached.plist
   sudo chmod 644 /usr/local/opt/memcached/homebrew.mxcl.memcached.plist
 
