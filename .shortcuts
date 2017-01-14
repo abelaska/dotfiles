@@ -31,12 +31,12 @@ alias rethink-stop="sudo launchctl unload /usr/local/opt/rethinkdb/homebrew.mxcl
 alias rethink-restart="rethink-stop && rethink-start"
 
 #############################################################################
-# docker aliases
+# mongodb aliases
 #############################################################################
 
-alias docker-start="docker-machine start dev && echo eval \"$(docker-machine env dev)\""
-alias docker-stop="docker-machine stop dev"
-alias docker-restart="docker-stop && docker-start"
+alias mongo-start="sudo launchctl load /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist"
+alias mongo-stop="sudo launchctl unload /usr/local/opt/mongodb/homebrew.mxcl.mongodb.plist"
+alias mongo-restart="mongo-stop && mongo-start"
 
 #############################################################################
 # tokumx aliases
@@ -45,14 +45,6 @@ alias docker-restart="docker-stop && docker-start"
 alias tokumx-start="sudo launchctl load /usr/local/opt/tokumx-bin/homebrew.mxcl.tokumx-bin.plist"
 alias tokumx-stop="sudo launchctl unload /usr/local/opt/tokumx-bin/homebrew.mxcl.tokumx-bin.plist"
 alias tokumx-restart="tokumx-stop && tokumx-start"
-
-#############################################################################
-# mongo aliases
-#############################################################################
-
-alias mongo-start="sudo launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
-alias mongo-stop="sudo launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist"
-alias mongo-restart="mongo-stop && mongo-start"
 
 #############################################################################
 # redis

@@ -32,17 +32,14 @@ export CFLAGS="-I/usr/local/include"
 export LDFLAGS="-L/usr/local/lib"
 
 # Google Cloud SDK
-export PATH="/Users/abelaska/Applications/google-cloud-sdk/bin:$PATH"
+export PATH="$HOME/Applications/google-cloud-sdk/bin:$PATH"
 
 # Google App Engine Go SDK
-export PATH="/Users/abelaska/Applications/go_appengine:$PATH"
-export GOPATH="/Users/abelaska/Applications/go_appengine/gopath"
+export PATH="$HOME/Applications/go_appengine:$HOME/Applications/gopath/bin:$PATH"
+export GOPATH="$HOME/Applications/gopath"
 
 # Android SDK
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # React
-export REACT_EDITOR=atom
-
-# Docker
-eval "$(docker-machine env dev)"
+# export REACT_EDITOR=atom
